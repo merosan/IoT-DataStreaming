@@ -1,0 +1,2123 @@
+[
+    {
+        "id": "30124f1028900655",
+        "type": "tab",
+        "label": "Start Facial Recognition",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "0137df1963690631",
+        "type": "tab",
+        "label": "SmartEntry Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "adce00d982eb980f",
+        "type": "tab",
+        "label": "Login Log Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "6d38cb8991d41b4a",
+        "type": "tab",
+        "label": "Room Count Dashboard",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "62f34dd8bef0832f",
+        "type": "tab",
+        "label": "Image Viewer Dashboard",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "874400961ed3031e",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-dark",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#097479",
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#0eb8c0",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#555555",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#eeeeee",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#097479",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#333333",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 120,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 10,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "235887b0b843e8bf",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6e8173a4cda692c5",
+        "type": "ui_group",
+        "name": "Group 1",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": 6
+    },
+    {
+        "id": "dfe685c0c63b0e7e",
+        "type": "ui_group",
+        "name": "Facial Recognition Logs",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "3a069fe83fbe37ba",
+        "type": "ui_group",
+        "name": "Facial Recognition Logs",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "a6946e4e824927eb",
+        "type": "ui_group",
+        "name": "Facial Recognition Logs",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "b12de678c92f43d2",
+        "type": "ui_group",
+        "name": "Facial Recognition Logs",
+        "tab": "caf8b50af23a2b38",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "caf8b50af23a2b38",
+        "type": "ui_tab",
+        "name": "Facial Recognition Dashboard",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "53a840ff82d03ba0",
+        "type": "ui_group",
+        "name": "People per Room",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "1a2b4c56d7e8f9a0",
+        "type": "ui_group",
+        "name": "Room Count",
+        "tab": "3a4b5c6d7e8f9a0b",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "3a4b5c6d7e8f9a0b",
+        "type": "ui_tab",
+        "name": "Room Count Dashboard",
+        "icon": "dashboard",
+        "order": 4,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "f51e2fd7bb50b732",
+        "type": "ui_group",
+        "name": "Gebäudebelegung",
+        "tab": "6cfbc03a951ce093",
+        "order": 1,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "6cfbc03a951ce093",
+        "type": "ui_tab",
+        "name": "Dashboard SmartEntry",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bdbedb3faa679635",
+        "type": "ui_group",
+        "name": "Temperaturen",
+        "tab": "6cfbc03a951ce093",
+        "order": 3,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "73b331f4.a8bda",
+        "type": "ui_group",
+        "name": "Webcam Winterthur",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "22",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "4d5d1450e565bfff",
+        "type": "ui_group",
+        "name": "Heizung",
+        "tab": "6cfbc03a951ce093",
+        "order": 2,
+        "disp": true,
+        "width": "7",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "dca017944a487473",
+        "type": "ui_group",
+        "name": "Led On/Off & Temperature Control",
+        "tab": "",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "fbc0c722d52511eb",
+        "type": "node-red-contrib-whatsapp-cmb-account",
+        "name": "Whatsapp API Account"
+    },
+    {
+        "id": "b98a607023626d96",
+        "type": "node-red-contrib-whatsapp-cmb-account",
+        "name": "thierry"
+    },
+    {
+        "id": "7bbe69b451943ab8",
+        "type": "ui_spacer",
+        "z": "0137df1963690631",
+        "name": "spacer",
+        "group": "73b331f4.a8bda",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "617881bf8c15db44",
+        "type": "ui_spacer",
+        "z": "0137df1963690631",
+        "name": "spacer",
+        "group": "f51e2fd7bb50b732",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4fefa62f.2c5dd8",
+        "type": "ui_group",
+        "name": "Image Viewer",
+        "tab": "8f9a67f5.07b128",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "8f9a67f5.07b128",
+        "type": "ui_tab",
+        "name": "Image Viewer Dashboard",
+        "icon": "dashboard",
+        "order": 3,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "9c3ff1a4.58eb8",
+        "type": "ui_group",
+        "name": "Image Viewer",
+        "tab": "c77a4e1b.1d7e3",
+        "order": 1,
+        "disp": true,
+        "width": "12",
+        "collapse": false
+    },
+    {
+        "id": "c77a4e1b.1d7e3",
+        "type": "ui_tab",
+        "name": "Image Viewer",
+        "icon": "dashboard",
+        "order": 5,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "91018fa40823ab8b",
+        "type": "ui-page",
+        "name": "Choose picture",
+        "ui": "a579bdc3f73a801f",
+        "path": "/",
+        "icon": "",
+        "layout": "grid",
+        "theme": "24b08f838675cf9c",
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "a579bdc3f73a801f",
+        "type": "ui-base",
+        "name": "Usecases",
+        "path": "/dashboard",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-control",
+            "ui-notification"
+        ]
+    },
+    {
+        "id": "5c66023267e5559e",
+        "type": "ui-group",
+        "name": "OSC",
+        "page": "91018fa40823ab8b",
+        "width": "6",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "24b08f838675cf9c",
+        "type": "ui-theme",
+        "name": "Theme Name",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094ce",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        }
+    },
+    {
+        "id": "eb23a053.4aa63",
+        "type": "ui_group",
+        "name": "Snapshot",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "af7dc749e140e0ff",
+        "type": "ui-group",
+        "name": "Climate control",
+        "page": "83ba0cadb204cc8e",
+        "width": "12",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "17e0aaf6e2c3b8b0",
+        "type": "inject",
+        "z": "30124f1028900655",
+        "name": "Start",
+        "props": [],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "x": 90,
+        "y": 240,
+        "wires": [
+            [
+                "ea7fe8a61d512d16"
+            ]
+        ]
+    },
+    {
+        "id": "ea7fe8a61d512d16",
+        "type": "exec",
+        "z": "30124f1028900655",
+        "command": "python3 ",
+        "addpay": "payload",
+        "append": "/home/pi/facial_recognition/facial_req_Room.py",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Start Facial Recognition",
+        "x": 310,
+        "y": 240,
+        "wires": [
+            [
+                "c7726afec009f6b6"
+            ],
+            [
+                "462d4de8f528b56e"
+            ],
+            [
+                "fca43e993460cd2a"
+            ]
+        ]
+    },
+    {
+        "id": "c7726afec009f6b6",
+        "type": "debug",
+        "z": "30124f1028900655",
+        "name": "stdout",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 650,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "462d4de8f528b56e",
+        "type": "debug",
+        "z": "30124f1028900655",
+        "name": "stderr",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 630,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "fca43e993460cd2a",
+        "type": "debug",
+        "z": "30124f1028900655",
+        "name": "return code",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "rc",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 630,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "a4d0e5a35b3809aa",
+        "type": "ui_form",
+        "z": "0137df1963690631",
+        "name": "",
+        "label": "",
+        "group": "bdbedb3faa679635",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "options": [
+            {
+                "label": "Stadt",
+                "value": "city",
+                "type": "text",
+                "required": true,
+                "rows": null
+            },
+            {
+                "label": "Land",
+                "value": "country",
+                "type": "text",
+                "required": true,
+                "rows": null
+            }
+        ],
+        "formValue": {
+            "city": "",
+            "country": ""
+        },
+        "payload": "",
+        "submit": "submit",
+        "cancel": "cancel",
+        "topic": "topic",
+        "topicType": "msg",
+        "splitLayout": "",
+        "className": "",
+        "x": 110,
+        "y": 1440,
+        "wires": [
+            [
+                "fb0e741c856e0e78"
+            ]
+        ]
+    },
+    {
+        "id": "fb0e741c856e0e78",
+        "type": "change",
+        "z": "0137df1963690631",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "input",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 1440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e3bd2f66151c7c4",
+        "type": "inject",
+        "z": "0137df1963690631",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 1560,
+        "wires": [
+            [
+                "5a38f6060948c011"
+            ]
+        ]
+    },
+    {
+        "id": "5a38f6060948c011",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "function 3",
+        "func": "var inp = global.get(\"input\")\nmsg = {\n    location:{\n        city: inp.city,\n        country: inp.country\n       \n    }\n\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1560,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6f5b232b27815862",
+        "type": "change",
+        "z": "0137df1963690631",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.location",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 1560,
+        "wires": [
+            [
+                "833955101e05f670"
+            ]
+        ]
+    },
+    {
+        "id": "8f899238b976766a",
+        "type": "change",
+        "z": "0137df1963690631",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.tempc",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 1620,
+        "wires": [
+            [
+                "4252845ad2eff60f"
+            ]
+        ]
+    },
+    {
+        "id": "4252845ad2eff60f",
+        "type": "ui_text",
+        "z": "0137df1963690631",
+        "group": "bdbedb3faa679635",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Aussentemperatur",
+        "format": "{{msg.payload}}°C",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1350,
+        "y": 1620,
+        "wires": []
+    },
+    {
+        "id": "833955101e05f670",
+        "type": "ui_text",
+        "z": "0137df1963690631",
+        "group": "bdbedb3faa679635",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Standort",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1320,
+        "y": 1560,
+        "wires": []
+    },
+    {
+        "id": "f889c8bf519c0cca",
+        "type": "inject",
+        "z": "0137df1963690631",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 110,
+        "y": 240,
+        "wires": [
+            [
+                "7f3f4b566bbbc688"
+            ]
+        ]
+    },
+    {
+        "id": "7f3f4b566bbbc688",
+        "type": "file in",
+        "z": "0137df1963690631",
+        "name": "db_sst",
+        "filename": "/home/pi/db.csv",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "utf8",
+        "allProps": false,
+        "x": 350,
+        "y": 240,
+        "wires": [
+            [
+                "277ca547c2fd2f7d"
+            ]
+        ]
+    },
+    {
+        "id": "1dcdb0f63a078d59",
+        "type": "ui_gauge",
+        "z": "0137df1963690631",
+        "name": "",
+        "group": "f51e2fd7bb50b732",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Aktuelle Belegung",
+        "label": "Personen",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "500",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "className": "",
+        "x": 1310,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "694b10d7343e1cfd",
+        "type": "inject",
+        "z": "0137df1963690631",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "20",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 960,
+        "wires": [
+            [
+                "3540dc75a2841d19"
+            ]
+        ]
+    },
+    {
+        "id": "3540dc75a2841d19",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "function 5",
+        "func": "// Generiert eine zufällige Temperatur zwischen 20 und 24 Grad Celsius\nvar temperatur = 20 + Math.random() * 4; // Multiplikator auf 4 geändert, um den Bereich von 20 bis 24 abzudecken\n\n// Rundet die Temperatur auf eine Kommastelle\nmsg.payload = Math.round(temperatur * 10) / 10;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 960,
+        "wires": [
+            [
+                "07be6c8955703770",
+                "b147908f337e2b35",
+                "17654fd9f3c8472a"
+            ]
+        ]
+    },
+    {
+        "id": "07be6c8955703770",
+        "type": "ui_text",
+        "z": "0137df1963690631",
+        "group": "bdbedb3faa679635",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Innentemperatur",
+        "format": "{{msg.payload}}°C",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1360,
+        "y": 960,
+        "wires": []
+    },
+    {
+        "id": "5f60eaef0dd115f0",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "function 7",
+        "func": "// Zugriff auf die Daten\nlet data = msg.payload;\n\n// Zählen der Objekte, bei denen 'entry' auf true gesetzt ist\nlet countTrueEntries = data.reduce((acc, current) => {\n  // Stelle sicher, dass der Wert in 'entry' als Boolean interpretiert wird (falls notwendig)\n  if (current.entry === true || current.entry === \"true\") {\n    acc += 1;\n  }\n  return acc;\n}, 0);\n\n// Speichere die Anzahl in der msg.payload für die Ausgabe\nmsg.payload = countTrueEntries;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 760,
+        "y": 240,
+        "wires": [
+            [
+                "5cff4d6d1036785c"
+            ]
+        ]
+    },
+    {
+        "id": "277ca547c2fd2f7d",
+        "type": "csv",
+        "z": "0137df1963690631",
+        "name": "",
+        "sep": ",",
+        "hdrin": true,
+        "hdrout": "all",
+        "multi": "mult",
+        "ret": "\\r",
+        "temp": "",
+        "skip": "0",
+        "strings": false,
+        "include_empty_strings": false,
+        "include_null_values": true,
+        "x": 550,
+        "y": 240,
+        "wires": [
+            [
+                "5f60eaef0dd115f0",
+                "61a91e28e7b94c58",
+                "9eb99ece1ef835fd"
+            ]
+        ]
+    },
+    {
+        "id": "61a91e28e7b94c58",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "function 8",
+        "func": "let data = msg.payload;\n// Finde das größte Datum in den Datensätzen\nlet latestDate = new Date(Math.max(...data.map(e => new Date(e.date))));\n\n// Finde das vollständige Objekt, das das neueste Datum enthält\nlet latestRecord = data.find(e => new Date(e.date).getTime() === latestDate.getTime());\n\n// Setze das vollständige Objekt als Payload, damit du auf alle seine Attribute zugreifen kannst\nmsg.payload = latestRecord;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 560,
+        "wires": [
+            [
+                "8af416668ea6bccd"
+            ]
+        ]
+    },
+    {
+        "id": "2f97ebe035bd7887",
+        "type": "ui_text",
+        "z": "0137df1963690631",
+        "group": "f51e2fd7bb50b732",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Letzter Eintritt",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1340,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "b147908f337e2b35",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "Trigger Alarm",
+        "func": "if(msg.payload > 23.9)\n{\n    msg.topic = \"Subject: System temperature has been exceeded.\";\n    msg.payload = \"Temperature: \" + String(msg.payload);\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 630,
+        "y": 1020,
+        "wires": [
+            [
+                "1de50b18c08f4561"
+            ]
+        ]
+    },
+    {
+        "id": "6ebdbefd72b8d8d1",
+        "type": "node-red-contrib-whatsapp-cmb-send-message",
+        "z": "0137df1963690631",
+        "name": "Whatsapp Message",
+        "account": "b98a607023626d96",
+        "text": "payload",
+        "inputtypemessage": "msg",
+        "rejectssl": false,
+        "x": 940,
+        "y": 1060,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a882b036ecf158e0",
+        "type": "ui_switch",
+        "z": "0137df1963690631",
+        "name": "",
+        "label": "Status",
+        "tooltip": "",
+        "group": "4d5d1450e565bfff",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1350,
+        "y": 1120,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "17654fd9f3c8472a",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "funktion",
+        "func": "// Überprüfen Sie, ob eine globale Variable 'empl' existiert und größer als 0 ist\nif (global.get(\"empl\") > 0) {\n    // Entscheidung treffen, basierend auf der Temperatur in msg.payload\n    if (msg.payload < 22) {\n        msg.payload = true;  // Heizung einschalten\n    } else {\n        msg.payload = false; // Heizung ausschalten\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 1120,
+        "wires": [
+            [
+                "a882b036ecf158e0",
+                "a85a71a4601bd606"
+            ]
+        ]
+    },
+    {
+        "id": "644a8895b396e667",
+        "type": "ui_text",
+        "z": "0137df1963690631",
+        "group": "4d5d1450e565bfff",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Aktueller Verbrauch",
+        "format": "{{msg.payload}}kWh",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1310,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "ecd00673276e9ddc",
+        "type": "ui_chart",
+        "z": "0137df1963690631",
+        "name": "",
+        "group": "4d5d1450e565bfff",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Energieverbrauch in kWh",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "100",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#cd182a",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d82c2c",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1330,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a85a71a4601bd606",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "funktion",
+        "func": "if (msg.payload == true) {\n    msg.payload = Math.floor(Math.random() * 40) + 1;\n} else {\n    msg.payload = 0;\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1340,
+        "wires": [
+            [
+                "644a8895b396e667",
+                "ecd00673276e9ddc"
+            ]
+        ]
+    },
+    {
+        "id": "96cc6f8c1e11821a",
+        "type": "inject",
+        "z": "0137df1963690631",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 130,
+        "y": 80,
+        "wires": [
+            [
+                "7421a1bc1f54d5f6"
+            ]
+        ]
+    },
+    {
+        "id": "7421a1bc1f54d5f6",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "change to Date",
+        "func": "// Angenommen, time ist ein Timestamp oder ein Datum-String, der vom Date Konstruktor akzeptiert wird\ntime = msg.payload;\n\n// Erstelle ein neues Date-Objekt\nvar date = new Date(time);\n\n// Array von Wochentagen auf Deutsch\nvar days = [\"Sonntag\", \"Montag\", \"Dienstag\", \"Mittwoch\", \"Donnerstag\", \"Freitag\", \"Samstag\"];\n\n// Formatierung der Ausgabe\nvar formattedDate = days[date.getDay()] + \", \" +\n    (\"0\" + date.getDate()).slice(-2) + \".\" +\n    (\"0\" + (date.getMonth() + 1)).slice(-2) + \".\" +\n    date.getFullYear() + \", \" +\n    (\"0\" + date.getHours()).slice(-2) + \":\" +\n    (\"0\" + date.getMinutes()).slice(-2);\n\n// Setze das formatierte Datum zurück in msg.payload\nmsg.payload = formattedDate;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 2,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 400,
+        "y": 80,
+        "wires": [
+            [
+                "9ee6039abe0da723"
+            ]
+        ]
+    },
+    {
+        "id": "9ee6039abe0da723",
+        "type": "ui_text",
+        "z": "0137df1963690631",
+        "group": "f51e2fd7bb50b732",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Datum",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 730,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "1de50b18c08f4561",
+        "type": "ui_toast",
+        "z": "0137df1963690631",
+        "position": "top right",
+        "displayTime": "15",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": false,
+        "className": "",
+        "topic": "",
+        "name": "",
+        "x": 930,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "9eb99ece1ef835fd",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "function 12",
+        "func": "// Initialisieren der Zählvariablen\nlet zoneA = 0;\nlet zoneB = 0;\nlet zoneC = 0;\n\n// Durchlaufen jedes Datensatzes\nmsg.payload.forEach(function (record) {\n    // Prüfe, ob der Eintrag in 'entry' true ist\n    if (record.entry === true || record.entry === \"true\") {  // Achte darauf, den korrekten Datentyp zu prüfen\n        switch (record.zone) { \n            case 'A':\n                zoneA++;\n                break;\n            case 'B':\n                zoneB++;\n                break;\n            case 'C':\n                zoneC++;\n                break;\n        }\n    }\n});\n\n// Erstellen der Ausgabemessage mit den Zählungen\nmsg.payload = {\n    zoneA: zoneA,\n    zoneB: zoneB,\n    zoneC: zoneC\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 340,
+        "wires": [
+            [
+                "b627a6ec981252b7"
+            ]
+        ]
+    },
+    {
+        "id": "b627a6ec981252b7",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "function 13",
+        "func": "// Umformatieren der Daten für das Balkendiagramm\nmsg.payload = [\n    {\n        \"series\": [\"Mitarbeiterzahlen\"],\n        \"data\": [[msg.payload.zoneA, msg.payload.zoneB, msg.payload.zoneC]],\n        \"labels\": [\"Zone A\", \"Zone B\", \"Zone C\"]\n    }\n];\nreturn msg;\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 970,
+        "y": 340,
+        "wires": [
+            [
+                "d960dbf11b5a180f",
+                "d7adac80f4f3b115",
+                "5fa974dbc8873fa1",
+                "8c680ca0c33d4686"
+            ]
+        ]
+    },
+    {
+        "id": "d960dbf11b5a180f",
+        "type": "ui_chart",
+        "z": "0137df1963690631",
+        "name": "",
+        "group": "f51e2fd7bb50b732",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "label": "Belegung nach Bürozonen",
+        "chartType": "horizontalBar",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1560,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "7f44c03296c88101",
+        "type": "ui_switch",
+        "z": "0137df1963690631",
+        "name": "",
+        "label": "Zone A",
+        "tooltip": "",
+        "group": "4d5d1450e565bfff",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1540,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d7adac80f4f3b115",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "funktion",
+        "func": "// Zugriff auf die Datenstruktur\nvar seriesData = msg.payload[0].data[0]; // Erreicht das Array [0, 4, 8]\n\n// Überprüfen der Mitarbeiterzahl in zoneA\nif (seriesData[0] === 0) {\n    node.warn(\"Zone A hat keine Mitarbeiter.\");  // Warnung im Debug-Bereich\n    msg.payload = false;           // Setzen der Ausgabe-Nachricht\n} else {\n    msg.payload = true;    // Setzen der Ausgabe-Nachricht\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 380,
+        "wires": [
+            [
+                "7f44c03296c88101"
+            ]
+        ]
+    },
+    {
+        "id": "88ba38bd6afb07be",
+        "type": "ui_switch",
+        "z": "0137df1963690631",
+        "name": "",
+        "label": "Zone B",
+        "tooltip": "",
+        "group": "4d5d1450e565bfff",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1540,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6d320307bcc9fa0b",
+        "type": "ui_switch",
+        "z": "0137df1963690631",
+        "name": "",
+        "label": "Zone C",
+        "tooltip": "",
+        "group": "4d5d1450e565bfff",
+        "order": 10,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "true",
+        "onvalueType": "bool",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "false",
+        "offvalueType": "bool",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 1540,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "5fa974dbc8873fa1",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "funktion",
+        "func": "// Zugriff auf die Datenstruktur\nvar seriesData = msg.payload[0].data[0]; // Erreicht das Array [0, 4, 8]\n\n// Überprüfen der Mitarbeiterzahl in zoneB\nif (seriesData[1] === 0) {\n    node.warn(\"Zone B hat keine Mitarbeiter.\");  // Warnung im Debug-Bereich\n    msg.payload = false;           // Setzen der Ausgabe-Nachricht\n} else {\n    msg.payload = true;    // Setzen der Ausgabe-Nachricht\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 440,
+        "wires": [
+            [
+                "88ba38bd6afb07be"
+            ]
+        ]
+    },
+    {
+        "id": "8c680ca0c33d4686",
+        "type": "function",
+        "z": "0137df1963690631",
+        "name": "funktion",
+        "func": "// Zugriff auf die Datenstruktur\nvar seriesData = msg.payload[0].data[0]; // Erreicht das Array [0, 4, 8]\n\n// Überprüfen der Mitarbeiterzahl in zoneC\nif (seriesData[2] === 0) {\n    node.warn(\"Zone C hat keine Mitarbeiter.\");  // Warnung im Debug-Bereich\n    msg.payload = false;           // Setzen der Ausgabe-Nachricht\n} else {\n    msg.payload = true;    // Setzen der Ausgabe-Nachricht\n}\n\nreturn msg;\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1320,
+        "y": 500,
+        "wires": [
+            [
+                "6d320307bcc9fa0b"
+            ]
+        ]
+    },
+    {
+        "id": "8af416668ea6bccd",
+        "type": "change",
+        "z": "0137df1963690631",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.date",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1030,
+        "y": 560,
+        "wires": [
+            [
+                "2f97ebe035bd7887"
+            ]
+        ]
+    },
+    {
+        "id": "5cff4d6d1036785c",
+        "type": "change",
+        "z": "0137df1963690631",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "empl",
+                "pt": "global",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 990,
+        "y": 240,
+        "wires": [
+            [
+                "1dcdb0f63a078d59"
+            ]
+        ]
+    },
+    {
+        "id": "e907368d20ba64dd",
+        "type": "change",
+        "z": "0137df1963690631",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.weather",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 1700,
+        "wires": [
+            [
+                "2dc2af1beb5daa44"
+            ]
+        ]
+    },
+    {
+        "id": "2dc2af1beb5daa44",
+        "type": "ui_text",
+        "z": "0137df1963690631",
+        "group": "bdbedb3faa679635",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Wetter",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1310,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "1b361e19d76976f9",
+        "type": "change",
+        "z": "0137df1963690631",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.windspeed",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 1760,
+        "wires": [
+            [
+                "25e0a77f389bbc77"
+            ]
+        ]
+    },
+    {
+        "id": "25e0a77f389bbc77",
+        "type": "ui_text",
+        "z": "0137df1963690631",
+        "group": "bdbedb3faa679635",
+        "order": 7,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Windgeschwindigkeit",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1360,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "37e0797a035997d3",
+        "type": "change",
+        "z": "0137df1963690631",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temp_minc",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 1820,
+        "wires": [
+            [
+                "462d215b650ae8eb"
+            ]
+        ]
+    },
+    {
+        "id": "681473368a1ba699",
+        "type": "change",
+        "z": "0137df1963690631",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.temp_maxc",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 910,
+        "y": 1880,
+        "wires": [
+            [
+                "07b8b1d6e010b196"
+            ]
+        ]
+    },
+    {
+        "id": "462d215b650ae8eb",
+        "type": "ui_text",
+        "z": "0137df1963690631",
+        "group": "bdbedb3faa679635",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperatur Min.",
+        "format": "{{msg.payload}}°C",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1340,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "07b8b1d6e010b196",
+        "type": "ui_text",
+        "z": "0137df1963690631",
+        "group": "bdbedb3faa679635",
+        "order": 9,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Temperatur Max.",
+        "format": "{{msg.payload}}°C",
+        "layout": "row-spread",
+        "className": "",
+        "x": 1350,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "2a3b5ee7f3f6a5e7",
+        "type": "openweathermap",
+        "z": "0137df1963690631",
+        "name": "",
+        "wtype": "current",
+        "lon": "",
+        "lat": "",
+        "city": "",
+        "country": "",
+        "language": "en",
+        "x": 650,
+        "y": 1560,
+        "wires": [
+            [
+                "6f5b232b27815862",
+                "8f899238b976766a",
+                "e907368d20ba64dd",
+                "1b361e19d76976f9",
+                "37e0797a035997d3",
+                "681473368a1ba699"
+            ]
+        ]
+    },
+    {
+        "id": "ff9e2517ef87cf67",
+        "type": "inject",
+        "z": "adce00d982eb980f",
+        "name": "Refresh Log",
+        "props": [],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "98b5c40e775fd296"
+            ]
+        ]
+    },
+    {
+        "id": "98b5c40e775fd296",
+        "type": "file in",
+        "z": "adce00d982eb980f",
+        "name": "Read Log File",
+        "filename": "/home/pi/facial_recognition/log.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 400,
+        "y": 180,
+        "wires": [
+            [
+                "5eae4643778b889e"
+            ]
+        ]
+    },
+    {
+        "id": "5eae4643778b889e",
+        "type": "function",
+        "z": "adce00d982eb980f",
+        "name": "Format Data",
+        "func": "let entries = [];\n\ntry {\n    entries = JSON.parse(msg.payload);\n} catch (err) {\n    node.error('Error parsing log file: ' + err);\n}\n\nmsg.payload = entries.map(e => {\n    return `<tr><td>${e.time}</td><td>${e.name}</td><td>${e.room}</td><td>${e.state}</td></tr>`;\n}).join('');\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 600,
+        "y": 180,
+        "wires": [
+            [
+                "7c4967ee31bd0dd1",
+                "35cdf019f7e19b12"
+            ]
+        ]
+    },
+    {
+        "id": "7c4967ee31bd0dd1",
+        "type": "ui_template",
+        "z": "adce00d982eb980f",
+        "group": "b12de678c92f43d2",
+        "name": "Dashboard List",
+        "order": 1,
+        "width": "12",
+        "height": "7",
+        "format": "<table>\n  <thead>\n    <tr>\n      <th>Time</th>\n      <th>Name</th>\n      <th>Room</th>\n      <th>State</th>\n    </tr>\n  </thead>\n  <tbody id=\"log-entries\">\n    <tr ng-repeat=\"row in msg.payload track by $index\" ng-bind-html=\"row\">\n    </tr>\n  </tbody>\n</table>\n<script>\n  (function(scope) {\n    scope.$watch('msg.payload', function(payload) {\n        var logEntries = document.getElementById('log-entries');\n        logEntries.innerHTML = payload;  // Update the innerHTML to the current payload\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 820,
+        "y": 180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "35cdf019f7e19b12",
+        "type": "debug",
+        "z": "adce00d982eb980f",
+        "name": "Debug Output Log",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "2570354d40f86ebe",
+        "type": "debug",
+        "z": "6d38cb8991d41b4a",
+        "name": "Debug Output Climate",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "x": 900,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "faa5ef0b1c1d918a",
+        "type": "inject",
+        "z": "6d38cb8991d41b4a",
+        "name": "Refresh Log",
+        "props": [],
+        "repeat": "5",
+        "crontab": "",
+        "once": true,
+        "onceDelay": "5",
+        "topic": "",
+        "x": 140,
+        "y": 160,
+        "wires": [
+            [
+                "50efff42e62f7293"
+            ]
+        ]
+    },
+    {
+        "id": "50efff42e62f7293",
+        "type": "file in",
+        "z": "6d38cb8991d41b4a",
+        "name": "Read Climate Log",
+        "filename": "/home/pi/facial_recognition/climate_log.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 400,
+        "y": 160,
+        "wires": [
+            [
+                "5630e313dca6b803"
+            ]
+        ]
+    },
+    {
+        "id": "5630e313dca6b803",
+        "type": "function",
+        "z": "6d38cb8991d41b4a",
+        "name": "Format Data",
+        "func": "let climateData = [];\n\ntry {\n    climateData = JSON.parse(msg.payload);\n} catch (err) {\n    node.error('Error parsing log file: ' + err);\n}\n\nif (typeof climateData === 'object' && !Array.isArray(climateData)) {\n    climateData = Object.entries(climateData).map(([room, data]) => ({ room, ...data }));\n}\n\nmsg.payload = climateData.map(e => {\n    return `<tr>\n                <td>${e.room}</td>\n                <td>${e.count}</td>\n                <td>${e.state}</td>\n            </tr>`;\n}).join('');\n\nreturn msg;\n",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 160,
+        "wires": [
+            [
+                "2570354d40f86ebe",
+                "89fb64c43b22ae10"
+            ]
+        ]
+    },
+    {
+        "id": "89fb64c43b22ae10",
+        "type": "ui_template",
+        "z": "6d38cb8991d41b4a",
+        "group": "1a2b4c56d7e8f9a0",
+        "name": "Climate Control Dashboard",
+        "order": 2,
+        "width": "12",
+        "height": "7",
+        "format": "<table>\n  <thead>\n    <tr>\n      <th>Room</th>\n      <th>Count</th>\n      <th>Climate Control</th>\n    </tr>\n  </thead>\n  <tbody id=\"climate-control\">\n    <tr ng-repeat=\"row in msg.payload\" ng-bind-html=\"row\"></tr>\n  </tbody>\n</table>\n<script>\n  (function(scope) {\n    scope.$watch('msg.payload', function(payload) {\n        var climateControl = document.getElementById('climate-control');\n        climateControl.innerHTML = payload;\n    });\n})(scope);\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 960,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "04a821fdb15d83be",
+        "type": "ui-dropdown",
+        "z": "62f34dd8bef0832f",
+        "group": "5c66023267e5559e",
+        "name": "Select Image",
+        "label": "Select Image",
+        "tooltip": "",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "multiple": false,
+        "options": [],
+        "payload": "",
+        "topic": "payload",
+        "topicType": "msg",
+        "className": "",
+        "x": 750,
+        "y": 80,
+        "wires": [
+            [
+                "13ec1edf8d4d994c"
+            ]
+        ]
+    },
+    {
+        "id": "c60298c2b21bc41d",
+        "type": "inject",
+        "z": "62f34dd8bef0832f",
+        "name": "Refresh Log",
+        "props": [],
+        "repeat": "5",
+        "crontab": "",
+        "once": false,
+        "onceDelay": "",
+        "topic": "",
+        "x": 140,
+        "y": 80,
+        "wires": [
+            [
+                "af8dc9b5d88e1523"
+            ]
+        ]
+    },
+    {
+        "id": "af8dc9b5d88e1523",
+        "type": "file in",
+        "z": "62f34dd8bef0832f",
+        "name": "Read Log File",
+        "filename": "/home/pi/facial_recognition/log.json",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 340,
+        "y": 80,
+        "wires": [
+            [
+                "e20bc4a0314946c1"
+            ]
+        ]
+    },
+    {
+        "id": "e20bc4a0314946c1",
+        "type": "function",
+        "z": "62f34dd8bef0832f",
+        "name": "Format File List",
+        "func": "let entries = [];\n\ntry {\n    entries = JSON.parse(msg.payload);\n} catch (err) {\n    node.error('Error parsing log file: ' + err);\n}\n\nlet options = entries\n    .filter(entry => entry.image) // filter out entries with empty image paths\n    .map(entry => ({ \"label\": entry.image.split('/').pop(), \"value\": entry.image }));\nmsg.options = options;\nmsg.payload = options;\nreturn msg;",
+        "outputs": 1,
+        "timeout": "",
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 80,
+        "wires": [
+            [
+                "04a821fdb15d83be",
+                "b69f761ce8c0f3b3"
+            ]
+        ]
+    },
+    {
+        "id": "13ec1edf8d4d994c",
+        "type": "change",
+        "z": "62f34dd8bef0832f",
+        "name": "Set Image Path",
+        "rules": [
+            {
+                "t": "set",
+                "p": "filename",
+                "pt": "msg",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 940,
+        "y": 80,
+        "wires": [
+            [
+                "e7a55a83a8b83023",
+                "03ec9f1b407d7cec"
+            ]
+        ]
+    },
+    {
+        "id": "e7a55a83a8b83023",
+        "type": "file in",
+        "z": "62f34dd8bef0832f",
+        "name": "Read Image File",
+        "filename": "payload",
+        "filenameType": "msg",
+        "format": "base64",
+        "chunk": false,
+        "sendError": true,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1140,
+        "y": 80,
+        "wires": [
+            [
+                "0251b14b35fe885d",
+                "e530f1f22dbea257"
+            ]
+        ]
+    },
+    {
+        "id": "0251b14b35fe885d",
+        "type": "debug",
+        "z": "62f34dd8bef0832f",
+        "name": "Debug Output filename",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "b69f761ce8c0f3b3",
+        "type": "debug",
+        "z": "62f34dd8bef0832f",
+        "name": "Debug Output list",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "03ec9f1b407d7cec",
+        "type": "debug",
+        "z": "62f34dd8bef0832f",
+        "name": "Debug Output image path",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 990,
+        "y": 160,
+        "wires": []
+    },
+    {
+        "id": "cd127c351e8832dc",
+        "type": "ui_template",
+        "z": "62f34dd8bef0832f",
+        "group": "9c3ff1a4.58eb8",
+        "name": "Image Viewer",
+        "order": 1,
+        "width": "12",
+        "height": "8",
+        "format": "<!DOCTYPE html>\n<html>\n<center>\n    <table>\n        <tr>\n            <!-- Row 1 -->\n            <td style=\"text-align: center\"><img src=\"data:image/jpg;base64,{{msg.payload}}\" class=img /></td>\n        </tr>\n    </table>\n</center>\n\n</html>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": false,
+        "templateScope": "local",
+        "className": "",
+        "x": 1540,
+        "y": 80,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e530f1f22dbea257",
+        "type": "base64",
+        "z": "62f34dd8bef0832f",
+        "name": "",
+        "action": "str",
+        "property": "payload",
+        "x": 1340,
+        "y": 80,
+        "wires": [
+            [
+                "cd127c351e8832dc"
+            ]
+        ]
+    }
+]
